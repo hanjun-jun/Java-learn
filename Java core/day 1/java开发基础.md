@@ -1,23 +1,23 @@
 ---
-#第一部分java开发基础
+# 第一部分java开发基础
 
 ---
 
-##一.什么是java
+## 一.什么是java
 > java是一种可以编写跨平台应用的面向对象的程序设计语言，是由Sun Microsystems公司于1995年5月推出的Java程序设计语言和Java平台（即JavaSE, JavaEE, JavaME）的总称。
 
-##二.java开发环境搭建
-###1.下载安装jdk
+## 二.java开发环境搭建
+### 1.下载安装jdk
 > ​ [Java官网](http://https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 > ​	JDK：Java SE Development Kit
 > ​	Java集成开发工具，当前最新版本JDK13，公司开发一般用jdk-8u144-windows-x64.exe；u144的意义：u：update，144：144次更新。
 
-###2.环境变量配置
+### 2.环境变量配置
 - 1.打开电脑属性-高级系统设置-环境变量
 - 2.配置系统环境变量Path,添加jdk安装目录下bin文件的路径，默认安装一般是C:\ProgramFiles\Java\jdk1.8.0_144\bin
 - 3.在系统变量中新建一个CLASSPATH：类路径，值是 .;(应切换到英文输入法下)
 
-####问题
+#### 问题
 - 问题1：Path和CLASSPATH大小写区分吗？
   答：Windows系统不区分，Linux、Unix、Mac下严格区分
 - 问题2：Path和CLASSPATH的区别？
@@ -25,7 +25,7 @@
 - 问题3：Windows下，如果用户变量和系统变量名字一样，哪个生效？
   答：用户变量生效，系统变量会被覆盖。
 
-####检查环境变量是否配置成功（dos系统）
+#### 检查环境变量是否配置成功（dos系统）
 
 - 1.方式一：用javac或java命令
   - 问题：javac和java从哪里来的？
@@ -36,7 +36,7 @@
   - 问题：如何查看当前机器上起效的JDK版本？
     答：java -version命令
 
-##四.编写HelloWorld程序，不带包。
+## 四.编写HelloWorld程序，不带包。
 
 - 编写Java代码的工具：记事本、Atom、Notepad++、EditPlus（商业）、Sublime、 VS Code.
 
@@ -64,7 +64,7 @@
 > - 类名、方法名后有一个空格
 > - Java严格区分大小写
 
-##五.编写HelloWorld程序，带包。
+## 五.编写HelloWorld程序，带包。
 
 - 包名命名规则：
 - 全小写，不建议数字
@@ -88,7 +88,7 @@ public class HelloWorld {
 - 编译：javac -encoding utf-8 -d  . HelloWorld.java
 - 执行：java cn.edu.java.day1.HelloWorld
 
-##六.在一个.java文件中写多个class，编译后产生什么？如何执行？
+## 六.在一个.java文件中写多个class，编译后产生什么？如何执行？
 
 ```Java
 package cn.edu.java.day1;
@@ -116,9 +116,9 @@ class Teacher {
 
 ---
 
-##面试问题
+## 面试问题
 
-###一.JDK、JRE、JVM是什么关系？
+### 一.JDK、JRE、JVM是什么关系？
 - 1.三者分别是什么？
   - JDK(Java SE Development Kit):Java集成开发工具包
   - JRE(Java Runtime Environment):Java运行环境
@@ -130,7 +130,7 @@ class Teacher {
   - JRE：包含API，支持Java程序的执行。
   - JVM：将class文件解释成特定平台的机器指令。
 
-###二.Java程序的执行过程？
+### 二.Java程序的执行过程？
 - Javac命令对程序进行编译成class文件，然后JVM翻译成对应的机器指令
 - .class文件是什么文件？答：字节码文件Bytecodes
 - .class文件中放的是什么东西？答：JVM可以识别的字节码，内容是16内容是16进制表示的。
@@ -198,11 +198,11 @@ class Teacher {
 
 - 1.控制板上：编译时：在windows下文件名大小写不区分，其他平台下不行（文件名是HelloWorld）
 
-> 例如: javac helloworld.java 或者 JAva Helloworld.java都可以编译,但是javac HelloWorld.JAVA不能编译。
+ > 例如: javac helloworld.java 或者 JAva Helloworld.java都可以编译,但是javac HelloWorld.JAVA不能编译。
 
 - 2.java严格区分大小写（包括文件名）
 
-> 例如：java HelloWorld  或者  JAVA HelloWorld 正确      java  helloworld  错误
+ > 例如：java HelloWorld  或者  JAVA HelloWorld 正确      java  helloworld  错误
 
 ## 九. Java语言哪年出现？
 - 1991年出现，1995年5月23号发布。
