@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息表</title>
+</head>
+<body>
+    <!--标题-->
+    <h1 align="center">个人信息表</h1>
+    <!--表单-->
+    <form action="我的第一个网页.html" method="post">
+        <!--表格-->
+        <table align="center" border="0">
+            <tr>
+                <td align="right"><font>*</font>用户名:</td>
+                <!--文本框 placeholder文本框里的提示文字-->
+                <td><input type="text" placeholder="请输入用户名" id="uname"name="uname"></td>
+                <td>
+                    <input readonly="true" placeholder="只读文本不能输入" >
+                <!--readonly="true" 为只读,不能够向文本框输入内容-->
+                </td>
+                
+            </tr>
+            <tr>
+                <td align="right"><font>*</font>密码:</td>
+                <!--密码框-->
+                <td><input type="password"  placeholder="请输入密码"></td>
+            </tr>
+            <tr>
+                <td align="right"><font>*</font>Email:</td>
+                <td><input type="text"></td>
+            </tr>
+			<tr>
+                <td align="right"><font>*</font>年级:</td>
+                <!--单选checked为默认选中-->
+				<td><input type="radio"name="sex"value="male">大一
+				<input type="radio"checked name="sex"value="female">大二</td>	
+            </tr>
+            <tr>
+                <td align="right"><font>*</font>性别:</td>
+                <td>
+                    <!--下拉选择-->
+                    <select name="" id="">
+                        <option value="">男</option>
+                        <option value="">女</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><font>*</font>出生日期:</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <font>*</font>居住地:
+                </td>
+                <td>
+                    <select>
+                        <option>四川省</option>
+                    </select>
+                    <select>
+                        <option>南充市</option>
+                    </select>
+                    <select>
+                        <option>阆中</option>
+                    </select>
+                </td>
+            </tr>
+			<tr>
+				<td align="right">
+				爱好:
+				</td>
+				<td>
+                <!--多选-->
+				 <input type="checkbox"name="love"value="tiqiu">踢球
+				 <input type="checkbox" checked name="love"value="qixing"> 骑行
+                 <input type="checkbox"checked   name="love"value="paobu"> 跑步
+				</td>
+			</tr>
+            <tr>
+                <td></td>
+                <!--提交按钮-->
+                <td><input type="submit" value="提交"></td>
+                <!--重置按钮-->
+                <td><input type="reset" value="重置"></td>
+                <!--普通按钮-->
+                <td><input type="button" value="普通按钮"></td>
+            </tr>
+            </table>
+            <div align="center"><!--超链接-->
+                <a href="http://www.baidu.com" align="center">百度</a>
+                <!--图片-->
+                <img alt="没找到" title="小狗" src="./images/dog.jpg" width="100ps" height="100ps"></a>
+            </div>
+    </form>
+</body>
+</html>
